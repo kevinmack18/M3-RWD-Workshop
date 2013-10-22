@@ -1,0 +1,99 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+
+		<!--  Mobile Viewport Fix
+		http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+		device-width : Occupy full width of the screen in its current orientation
+		initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+		maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width (not recommended for accessibility reasons)
+		-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<!-- Open Graph Meta Data
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:type" content="company" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:image" content="" />
+		-->
+		<!-- Windows 8 Meta Data
+		<meta name="application-name" content="" />
+		<meta name="msapplication-TileColor" content="" />
+		<meta name="msapplication-TileImage" content="" />
+		-->
+		<!-- Twitter Meta Data
+		<meta name="twitter:title" content="">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:card" content="">
+		-->
+
+		<title>Workshop</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+		<h1>
+			Hello world!
+		</h1>
+
+		<!-- The traditional favicon.
+		 - size: 16x16 or 32x32
+		 - transparency is OK
+		 - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+		<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css" />
+
+		<!-- build:css assets/css/styles.css -->
+		<!-- This file is generated from the scss directory and any files that are in the css directory
+		 - any plugin css should be added to the /assets/css directory and they will be concatinated to the end of the styles.css file
+		 - all of the css files added to this build block will be concatinated into the styles.css file by the usemin grunt task -->
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<!-- endbuild -->
+
+		<!--[if IE]><link rel="stylesheet" type="text/css" href="/assets/css/ie.css" /><![endif]-->
+
+		<!-- This is an un-minified, complete version of Modernizr.
+		 Before you move to production, you should generate a custom build that only has the detects you need. -->
+		<script src="assets/js/lib/modernizr-2.6.2.dev.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="/assets/js/lib/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="assets/js/lib/jquery.min.js"><\/script>')</script>
+
+		<!-- build:js assets/js/main.js -->
+		<!-- Additional JS Libraries and Frameworks Here
+		 - List the js files and libraries below inside of the build block in the order you want them concatenated on build
+		 - This block is parsed by the usemin grunt task and it generates one main.js file for production -->
+		<script src="assets/js/main.js"></script>
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			/*var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));*/
+		</script>
+
+	</body>
+</html>
