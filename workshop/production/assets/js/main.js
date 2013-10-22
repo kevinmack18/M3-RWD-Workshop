@@ -1,0 +1,1 @@
+"use strict";window.scroll(0,1);

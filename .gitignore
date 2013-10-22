@@ -188,7 +188,7 @@ node_modules/
 *.lock
 
 #Production Build
-production
+#production
 
 #Docs
 _documentation/
