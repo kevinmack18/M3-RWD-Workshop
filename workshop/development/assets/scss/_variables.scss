@@ -16,3 +16,33 @@ $max-width: 900px;
 
 
 // ## Global Colors
+$black-varient: #010101;
+$black: $black-varient;
+$gray: #2A2A2A;
+$white: #F3F4F4;
+$resource-green: #7EB400;
+$green: $resource-green;
+
+$container--black: #000;
+$container--black__headline-color: $green;
+$container--black__text-color: #FFF;
+
+$container--gray: #2A2A2A;
+$container--gray__headline-color: #FFF;
+$container--gray__text-color: #FFF;
+
+$container--white: #FFF;
+$container--white__headline-color: $green;
+$container--white__text-color: $gray;
+
+$container--off-white: $white;
+$container--offwhite__headline-color: $green;
+$container--offwhite__text-color: $gray;
+
+$container--gray-light: #F2F2F2;
+$container--gray__light-headline-color: $green;
+$container--gray__light-text-color: $gray;
+
+$container--green: $green;
+$container--green__headline-color: #FFF;
+$container--green__text-color: #FFF;

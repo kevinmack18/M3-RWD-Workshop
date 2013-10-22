@@ -2,3 +2,15 @@
    Global Mixins
    ========================================================================== */
 
+@mixin glyph {
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-size: inherit;
+	font-family: 'Resource-Dot-Com';
+	line-height: .9;
+	*line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+

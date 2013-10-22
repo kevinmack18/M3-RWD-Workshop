@@ -2,3 +2,108 @@
    Containers & Holders
    ========================================================================== */
 
+
+/**
+ * List Items
+ */
+.unlist--nav {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+	> li {
+		display: inline-block;
+		margin-left: 5px;
+		padding: 0 5px;
+		&:first-child {
+			margin-left: -5px;
+		}
+	}
+}
+
+.seperators {
+	> li {
+		&:before {
+			display: inline-block;
+			padding-right: 15px;
+			color: rgba(255,255,255,.3);
+			content: "|";
+		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+
+/**
+ * ## Container
+ * `.container` all have `margin-left: auto;` and `margin-right: auto;`
+ */
+.container {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/**
+ * ## Container Full Width
+ * Max width of inner contents is set to `$max-width` in "_variables.scss"
+ * Majority of inner content zones should contain extra padding of `$default-space` 2x on sides.
+ */
+.container-full {
+	overflow: hidden;
+	> .container {
+		width: $max-width;
+
+		@media screen and ( max-width: $max-width + ($default-space * 2) ) {
+			margin-right: $default-space;
+			margin-left: $default-space;
+			width: auto; // Keep "fluid feel" of gutters for containers
+		}
+
+	}
+}
+
+
+
+/**
+ * ### `.float-container`
+ * Used for a container that contains floats and you don't want child elements to expand outside of it
+ */
+.float-container {
+	overflow: hidden;
+}
+
+
+
+/**
+ * ## Container Background Colors
+ * Extended from the  "Typography" section (color definitions of fonts)
+ */
+.background-color--black {
+	@extend %background-color--black; // from Typography section, color definitions of fonts
+	background-color: $container--black;
+}
+.background-color--gray {
+	@extend %background-color--gray; // from Typography section, color definitions of fonts
+	background-color: $container--gray;
+}
+.background-color--green {
+	@extend %background-color--green; // from Typography section, color definitions of fonts
+	background-color: $container--green;
+}
+.background-color--white, .background-color--gray--light, .background-color--white--dark {
+	@extend %background-color--white; // from Typography section, color definitions of fonts
+}
+.background-color--white {
+	background-color: $container--white;
+}
+.background-color--white--dark {
+	background-color: $container--off-white;
+}
+.background-color--gray--light {
+	background-color: $container--gray-light;
+}
+

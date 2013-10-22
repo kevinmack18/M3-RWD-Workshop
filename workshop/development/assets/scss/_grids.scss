@@ -3,4 +3,135 @@
    ========================================================================== */
 
 
+%grid {
+	> .grid__cell, > .grid__cell--asset, > .grid__cell--content, > .grid__cell--larger {
+		&:nth-child(odd) {
+			float: left;
+		}
+		&:nth-child(even) {
+			float: right;
+		}
+	}
+}
+
+
+/**
+ * ## Grid
+ * Inherits `%grid` properties
+ * **nth-child(odd)** is `float: left` and **nth-child(even)** is `float: right`
+ */
+.grid {
+	@extend %grid;
+}
+
+
+/**
+ * ### Basic Two Column Grid and Basic Content Setup Grid
+ * Note: it's not equal Columns inside - Width's are based off of design dimensions.
+ * The basic grid setup is two columns, one is larger than other 46-to-54 proportions.
+
+ * ### Variation of naming available
+ * Children of `.grid__cell` = `grid__cell--content` and `.grid__cell--asset` = `.grid__cell_larger`
+
+ */
+.grid--two, .grid--two--layed {
+	@extend %grid;
+}
+
+.grid--two {
+	> .grid__cell, > .grid__cell--content {
+		width: percentage( 4 / 12);
+	}
+	> .grid__cell--larger, > .grid__cell--asset {
+		width: percentage( 8 / 12);
+	}
+}
+
+
+/**
+ * ## Image Width Inheritance
+ * `.grid__cell--asset` and `.asset-container` make children `<img />` width equal to "100%"
+ */
+.grid__cell--asset, .asset-container {
+	> img {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+/*
+ * ## Two Column Grid
+ * Equal column widths (50%), applied to absolute path of child (`.grid__cell`)
+ */
+.grid--equal--two {
+	> .grid__cell {
+		width: 50%;
+	}
+}
+
+.grid--two, .grid--equal--two {
+	> .grid__cell {
+		// Clear for equal grid/column heights:
+		&:nth-child(2n+1) {
+			clear: both;
+		}
+	}
+}
+
+
+/*
+ * ## Three Column Grid
+ * Equal column widths (33.333%), applied to absolute path of child (`.grid__cell`)
+ */
+.grid--equal--three {
+	> .grid__cell {
+		width: percentage( 1 / 3 );
+		// Clear for equal grid/column heights:
+		&:nth-child(3n+1) {
+			clear: both;
+		}
+	}
+}
+
+
+/**
+ * ## Grid Padding
+ * Apply with "grid" block selector class.
+ */
+.grid-padding {
+	margin-left: -1 * $default-space / 2;
+	.grid__cell {
+		padding-bottom: $default-space / 2;
+		padding-left: $default-space / 2;
+	}
+}
+
+
+/**
+ * ### Equal heights for any parent class that has `grid` in it
+
+*/
+.grid, [class*="grid__equal"] {
+	> .grid__cell--left {
+		float: left;
+	}
+	> .grid__cell--right {
+		float: right;
+	}
+}
+
+[class*="grid--equal"] {
+	> .grid__cell {
+		float: left;
+	}
+}
+
+.grid, .grid--two, .grid--two--layed, [class*="grid--equal"] {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
 
