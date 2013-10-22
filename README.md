@@ -26,9 +26,11 @@ An RWD Workshop for the [2013 M3 Conf](http://m3conf.com), presented by Kevin Ma
 ## Running Locally
 
 ## Grunt
+
 This project comes setup with a [Grunt](http://gruntjs.com/getting-started) script that builds the project into the "~/M3-RWD-Workshop/workshop/production" folder, compiles scss and minifies it, concatenates js/css files included in the index.html build blocks and minifies them along with gzip compression, optimizes all of the images (png,jpg,jpeg,webp), performs a direct copy of assets/fonts/, assets/media/ and assets/js/libs directories and updates all of the links in the index file to reference the new minified files.
 
 ### Grunt Installation
+
 The Grunt task requires the following dependencies: [Node](http://nodejs.org/), [GruntJS](http://gruntjs.com/), and [Ruby](http://rubyinstaller.org/downloads/) (for Windows).
 
 ```
@@ -38,6 +40,7 @@ The Grunt task requires the following dependencies: [Node](http://nodejs.org/), 
 ```
 
 ### Grunt Server - Run it!
+
 Launch a node server that compiles scss and fires a new browser tab with livereload that transforms you into a ROCK STAR!!!
 
 ```
@@ -46,6 +49,7 @@ Launch a node server that compiles scss and fires a new browser tab with liverel
 ```
 
 #### Custom Port
+
 By default the port is `8989` but you can override it by doing the following:
 
 ```
@@ -53,6 +57,7 @@ By default the port is `8989` but you can override it by doing the following:
 ```
 
 ### Grunt Build
+
 Builds the project into a _compiled folder, compiles scss and minifies it, concatenates js/css files included in the index.html build blocks and minifies them along with gzip compression, optimizes all of the images (png,jpg,jpeg,webp), performs a direct copy of assets/fonts/, assets/media/ and assets/js/libs directories into dist, and updates all of the links in the index file to reference the new minified files. By default, the build will output to: `_compiled/`
 
 ```
@@ -63,6 +68,7 @@ Builds the project into a _compiled folder, compiles scss and minifies it, conca
 ## Sass Setup
 
 ### Install Sass
+
 Sass is written in Ruby, so you’ll need Ruby installed as well. If you're using OS X, it's already there. Windows users can get it via the [RubyInstaller](http://rubyinstaller.org/downloads/) for Windows. Linux users can install it with their package manager. Once you have Ruby installed, run the following from the command line to install Sass:
 
 ```
@@ -70,6 +76,7 @@ Sass is written in Ruby, so you’ll need Ruby installed as well. If you're usin
 ```
 
 ### Sass --watch
+
 Tell Sass to watch the file and update the CSS every time the Sass file changes:
 
 ```
@@ -110,12 +117,15 @@ Please note: If you want to use `ServerName`, you will have to update your HOSTS
 ---
 
 ## Libraries
+
 * [jQuery](http://jquery.com) [1.9.1] - [MIT License](https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt)
 
 ---
 
 ## Future Enhancements
+
 * Future enhancements on starter kits, UI Tool Kits, and additional libraries, visit us on [Github](http://github.com/resource).
+
 ---
 
 ## Additional
