@@ -1,0 +1,196 @@
+@font-face {
+	font-family: 'Resource-Dot-Com';
+	src:url('../Resource-Dot-Com.eot');
+	src:url('../Resource-Dot-Com.eot?#iefix') format('embedded-opentype'),
+		url('../Resource-Dot-Com.woff') format('woff'),
+		url('../Resource-Dot-Com.ttf') format('truetype'),
+		url('../Resource-Dot-Com.svg#Resource-Dot-Com') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'Resource-Dot-Com';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="your-class-prefix"] {
+*/
+.facebook, .twitter, .goal, .circle-full, .circle, .rotate, .angle-down, .caret-up, .caret-left, .arrow-right, .caret-right, .arrow-left, .eye, .menu, .reorder, .sort, .loop, .arrow-left-2, .arrow-left-3, .angle-left, .arrow-right-2, .arrow-right-3, .angle-right, .RWD, .rlogo-02, .resourcefulllogo-01, .resoucewordmark-03, .virtual-to-physical, .forward-04, .close-05, .back-03, .instagram, .android, .google-plus, .youtube, .foursquare, .pinterest, .html5, .github, .github-2, .apple, .windows8, .camera, .play, .pause, .stop, .play-2, .pause-2, .mobile, .screen, .cart, .marker {
+	font-family: 'Resource-Dot-Com';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.facebook:before {
+	content: "\66";
+}
+.twitter:before {
+	content: "\74";
+}
+.goal:before {
+	content: "\21";
+}
+.circle-full:before {
+	content: "\a1";
+}
+.circle:before {
+	content: "\6f";
+}
+.rotate:before {
+	content: "\4f";
+}
+.angle-down:before {
+	content: "\76";
+}
+.caret-up:before {
+	content: "\5e";
+}
+.caret-left:before {
+	content: "\3c";
+}
+.arrow-right:before {
+	content: "\7d";
+}
+.caret-right:before {
+	content: "\3e";
+}
+.arrow-left:before {
+	content: "\7b";
+}
+.eye:before {
+	content: "\22";
+}
+.menu:before {
+	content: "\23";
+}
+.reorder:before {
+	content: "\3d";
+}
+.sort:before {
+	content: "\e6";
+}
+.loop:before {
+	content: "\ec";
+}
+.arrow-left-2:before {
+	content: "\31";
+}
+.arrow-left-3:before {
+	content: "\33";
+}
+.angle-left:before {
+	content: "\35";
+}
+.arrow-right-2:before {
+	content: "\32";
+}
+.arrow-right-3:before {
+	content: "\34";
+}
+.angle-right:before {
+	content: "\36";
+}
+.RWD:before {
+	content: "\77";
+}
+.rlogo-02:before {
+	content: "\72";
+}
+.resourcefulllogo-01:before {
+	content: "\52";
+}
+.resoucewordmark-03:before {
+	content: "\73";
+}
+.virtual-to-physical:before {
+	content: "\7e";
+}
+.forward-04:before {
+	content: "\bb";
+}
+.close-05:before {
+	content: "\58";
+}
+.back-03:before {
+	content: "\ab";
+}
+.instagram:before {
+	content: "\69";
+}
+.android:before {
+	content: "\61";
+}
+.google-plus:before {
+	content: "\67";
+}
+.youtube:before {
+	content: "\79";
+}
+.foursquare:before {
+	content: "\46";
+}
+.pinterest:before {
+	content: "\70";
+}
+.html5:before {
+	content: "\48";
+}
+.github:before {
+	content: "\47";
+}
+.github-2:before {
+	content: "\68";
+}
+.apple:before {
+	content: "\41";
+}
+.windows8:before {
+	content: "\57";
+}
+.camera:before {
+	content: "\43";
+}
+.play:before {
+	content: "\63";
+}
+.pause:before {
+	content: "\5d";
+}
+.stop:before {
+	content: "\5b";
+}
+.play-2:before {
+	content: "\2d";
+}
+.pause-2:before {
+	content: "\5f";
+}
+.mobile:before {
+	content: "\6d";
+}
+.screen:before {
+	content: "\64";
+}
+.cart:before {
+	content: "\65";
+}
+.marker:before {
+	content: "\78";
+}

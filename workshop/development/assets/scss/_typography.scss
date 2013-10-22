@@ -2,3 +2,18 @@
    Typography
    ========================================================================== */
 
+
+/**
+ * # Custom Web Font
+ */
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Resource-Dot-Com';
+	src:url('../fonts/Resource-Dot-Com.eot');
+	src:url('../fonts/Resource-Dot-Com.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Resource-Dot-Com.woff') format('woff'),
+	url('../fonts/Resource-Dot-Com.ttf') format('truetype'),
+	url('../fonts/Resource-Dot-Com.svg#Resource-Dot-Com') format('svg');
+}
+
