@@ -71,4 +71,103 @@ body {
 }
 
 
+/**
+ * ## Toolkit Style "1"
+ * Basic content setup main sections that have same setup of "Hello World"
+ * Controls the scaling of the main asset
+ */
+.kit-style--1 {
+	.kit-style__image {
+		position: absolute;
+		display: block;
+		width: 112%;
+		@media screen and (max-width: $max-width + ($default-space * 2)) {
+			width: 100%;
+		}
+	}
+	.kit-style__asset {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 780px ) {
+	.kit-style--1 {
+		.overflow-out {
+			width: percentage(  200 / 100 );
+		}
+		.kit-style__image {
+			margin-left: -40px;
+			width: 370px;
+		}
+	}
+}
+
+@media screen and (max-width: 580px ) {
+	.kit-style--1 {
+		.overflow-out {
+			width: auto;
+		}
+		.kit-style__asset {
+			margin-bottom: (-1) * $default-space;
+			padding-left: 0;
+		}
+		.kit-style__image {
+			position: relative;
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+}
+
+
+/**
+ * ## Toolkit Style "2"
+ * Apply with `grid--equal--two` or  `grid--two`
+ * Breaks "two column grid" in single column @vp=580
+ */
+.kit-style--2 {
+	@media screen and ( max-width: 580px ) {
+		.grid__cell--asset, .grid__cell--content, .grid__cell {
+			float: none;
+		}
+		.grid__cell--content, .grid__cell, .grid__cell--asset {
+			width: auto;
+		}
+		.grid__cell--asset {
+			width: auto;
+		}
+	}
+}
+
+
+/**
+ * ## Toolkit Style "3"
+ * Apply with `grid--equal--three`
+ * Breaks "three column grid" in single column @vp=580
+ */
+.kit-style--3 {
+	@media screen and ( max-width: 580px ) {
+		.kit-style__grid {
+			width: auto;
+		}
+		.kit-style__image {
+			& + a {
+				position: relative;
+				z-index: 1;
+				margin-top: -5px;
+				margin-bottom: 5px;
+				width: 100%;
+				border-top: 2px solid #000;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+				background-color: $green;
+				color: #FFF;
+				&:hover {
+					background-color: $gray;
+					color: $green;
+				}
+			}
+		}
+	}
+}
 
