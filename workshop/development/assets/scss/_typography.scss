@@ -17,3 +17,123 @@
 	url('../fonts/Resource-Dot-Com.svg#Resource-Dot-Com') format('svg');
 }
 
+%title-setup {
+	-webkit-font-kerning: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+.glyph {
+	@include glyph;
+}
+
+h1, h2, h3, h4 ,h5 ,h6, b, strong {
+	font-weight: 700;
+	font-family: "Lato", Arial, Verdana, sans-serif;
+
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	padding-bottom: ($default-space * 2);
+	letter-spacing: -0.02em;
+	font-size: 2em;
+	line-height: ( 55 / 45 );
+}
+
+h1, h2, h3, h4 {
+	line-height: 1;
+	font-kerning: normal;
+	-webkit-font-kerning: normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, p {
+	margin: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+h1, h2, h3, h4 {
+	padding-bottom: $default-space;
+}
+
+p {
+	padding-top: 0;
+}
+
+
+/**
+ * ## Font Bootstrap
+ * General setup for fonts in a "section setting"
+ */
+.typography-setup--default {
+	font-size: 1.33em;
+	h2 {
+		@extend %title-setup;
+	}
+	a + h2 {
+		padding-top: $default-space;
+	}
+	p {
+		padding-bottom: $default-space;
+		& ~ h2 {
+			margin-top: $default-space + ($default-space / 2);
+		}
+	}
+}
+
+
+/**
+ * ## Color Inheritance
+ * Basic on background color variations: Black, white, etc.
+ * Must add parent identifier to inherit or overwrite.
+ */
+%background-color--black, %background-color--gray {
+	color: $container--black__text-color;
+	h1, h2 {
+		color: $container--black__headline-color;
+	}
+	p a {
+		color: $green;
+	}
+}
+
+%background-color--green {
+	color: $container--green__text-color;
+	h1, h2 {
+		color: $container--green__headline-color;
+	}
+	p a {
+		color: $gray;
+	}
+}
+
+%background-color--white {
+	color: $container--white__text-color;
+	h1, h2 {
+		color: $container--white__headline-color;
+	}
+	p a {
+		color: $green;
+	}
+}
+
+
+/**
+ * ## Alignments
+ */
+.align-full {
+	text-align: justify;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
