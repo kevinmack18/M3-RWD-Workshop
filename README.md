@@ -1,7 +1,11 @@
 M3 Workshop
 =====
 
-An RWD Workshop for the [2013 M3 Conf](http://m3conf.com), presented by Kevin Mack and Ryan Bichon.
+An RWD Workshop for the [2013 M3 Conf](http://m3conf.com), presented by Kevin Mack and Ryan Bichon. 
+
+* View presentation slides: [http://kevinmack18.github.io/M3-RWD-Workshop/presentation/Presentation.pptx](http://kevinmack18.github.io/M3-RWD-Workshop/presentation/Presentation.pptx)
+* View final demo: [http://kevinmack18.github.io/M3-RWD-Workshop/](http://kevinmack18.github.io/M3-RWD-Workshop/)
+* View the demo's toolkit: [http://kevinmack18.github.io/M3-RWD-Workshop/toolkit.html](http://kevinmack18.github.io/M3-RWD-Workshop/toolkit.html)
 
 ---
 
